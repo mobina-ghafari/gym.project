@@ -1,0 +1,181 @@
+@font-face {
+    font-family: yekan;
+    src: url(../font/iranyekanwebbold.ttf);
+}
+
+*{
+    font-family: yekan;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*line height*/
+.lh-1{
+    line-height: 30px;
+}
+
+.lh-2{
+    line-height: 35px;
+}
+
+.lh-3{
+    line-height: 40px;
+}
+/*line height*/
+
+/*header style*/
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*navbar*/
+.my-nav{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5));
+    padding: 30px;
+    transition: all 0.7s;
+}
+
+.line1 , .line2 , .line3{
+    width: 23px;
+    margin: 5px;
+    height: 3px;
+    transition: all 0.4s;
+}
+
+.change .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .line2{
+    opacity: 0;
+}
+
+.change .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.my-li{
+    color: #eee;
+    font-size: 17px;
+    transition: color 0.5s;
+}
+
+.my-li:hover{
+    color: #70aed2;
+}
+
+.change-navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+/*navbar*/
+
+/*banner*/
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-h{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-p{
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/*banner*/
+/*header style*/
+
+/*honors*/
+.honors{
+    background-color: #151f20;
+}
+
+.fromLeft{
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight{
+    animation-name: fromRight;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/*honors*/
+
+/*services*/
+.card-show{
+    box-shadow: 5px 8px 20px #444;
+}
+
+.card-tex{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    background-color: #2980b9;
+    opacity: 0.8;
+    width: 60%;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+.card-tex:hover{
+    opacity: 1;
+}
+/*services*/
