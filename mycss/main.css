@@ -179,3 +179,169 @@ header{
     opacity: 1;
 }
 /*services*/
+
+/*gallery*/
+.gallery-item{
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active-item{
+    color: #70aed2;
+}
+/*gallery*/
+
+/*slider*/
+.slider{
+    background-color: #151f20;
+}
+/*slider*/
+
+/*plan*/
+.card1 , .card2 , .card3{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.5)), url(../img/membership.jpg);
+    background-size: cover;
+    max-width: 370px;
+    box-shadow: 7px 8px 50px #555;
+}
+
+.card-li{
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto;
+}
+
+.card-btn{
+    background-color: #2980b9;
+    width: 130px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 18px #000;
+    transition: all 0.4s;
+}
+
+.card-btn:hover{
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+@keyframes moveFromLeft {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveFromRight {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveFromBottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  .moveFromLeft {
+    animation-name: moveFromLeft;
+    animation-duration: 2s;
+  }
+  
+  .moveFromRight {
+    animation-name: moveFromRight;
+    animation-duration: 2s;
+  }
+  
+  .moveFromBottom {
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+  }  
+
+/*plan*/
+
+/*contact*/
+.contact{
+    background: linear-gradient(105deg,rgba(21,31,32,.8)0% ,rgba(21,31,32,.9)50% ,transparent 50%), url(../img/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input{
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #eee;
+    transition: all .8s;
+    border-color: transparent;
+}
+
+.input:focus{
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-color: transparent;
+    border-bottom: 2px solid #f5593d;
+    box-shadow: none;
+}
+
+.sub-btn{
+    background-color: #2980b9;
+    color: #eee;
+    transition: all .3s;
+}
+
+.label{
+    color: #777;
+    font-size: 13px;
+    display: block;
+    margin-top: -70px;
+    margin-right: 4px;
+    transition: all .4s;
+}
+
+.input:placeholder-shown + .label{
+    transform: translate(20px , 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media(max-width: 992px){
+    .contact{
+      background: linear-gradient(105deg, rgba(21,31,32,.8) 0%,rgba(21,31,32,.9) 50%);
+    }
+    .contact-form{
+      width: 80%;
+      margin: auto;
+    }
+  
+  }
+/*contact*/
+/*footer*/
+.footer-a{
+    color: #eee;
+    transition: all .3s;
+    font-size: 13px;
+}
+
+.footer-a:hover{
+    color: #70aed2;
+    text-decoration: none;
+}
+/*footer*/
